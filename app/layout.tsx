@@ -14,6 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <img src={`/next.svg`} alt='next이미지' className='nextimg' style={{background:'pink'}} />
         <Navigation />
         {children}
       </body>
