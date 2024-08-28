@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import { Metadata } from "next";
 import Navigation from "../components/navigation";
+import Image from 'next/image'
+import img1 from "../public/replit.svg";
 
 export const metadata: Metadata = {
   title: {
@@ -15,6 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <body>
         <img src={`/next.svg`} alt='next이미지' className='nextimg' style={{background:'pink'}} />
+        <Image src={img1} />
         <Navigation />
         {children}
       </body>
